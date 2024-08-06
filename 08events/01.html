@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="images">
+        <li><img width="125px" id="photoshope" src="ajay.png.jpg" alt="photoshope"></li>
+        <li><img width="125px" height="200px" id="japan" src="pexels-jjagtenberg-103123.jpg" alt=""></li>
+        <li><img width="125px" id="rever" src="pexels-quang-nguyen-vinh-222549-2176593.jpg" alt=""></li>
+        <li><img width="200px" id="owl" src="pexels-samsilitongajr-848573.jpg" alt=""></li>
+    </ul>
+    
+</body>
+<script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert("owl clicked")
+    // }
+    // atechEvent
+
+    //jQury .on
+    //  document.getElementById('owl').addEventListener('click',function(){
+    //     alert("owen clicked again")}
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //      console.log(e);
+    //     },true);
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //      console.log(e);
+    //     },false);
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log("clicked inside the url");
+       },false);
+
+       document.getElementById('owl').addEventListener('click',function(e){
+          console.log("own clicked");
+        },false); 
+        e.stopPropagation()
+
+
+    //     document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the url");
+    //    },true);
+
+    //    document.getElementById('owl').addEventListener('click',function(e){
+    //       console.log("own clicked");
+    //     },true);
+</script>
+</html>
